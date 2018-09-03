@@ -32,11 +32,11 @@ def take_data():
     '''
     time_now = [localtime(time())[3], localtime(time())[4]]
     time_now_day = localtime(time())[6]
-    print(time_now, time_now_day)
+    #print(time_now, time_now_day)
     time_now[0], time_now[1], time_now_day = add_utc(3, time_now[0], time_now[1], time_now_day)[0], \
                                              add_utc(3, time_now[0], time_now[1], time_now_day)[1], \
                                              add_utc(3, time_now[0], time_now[1], time_now_day)[2]
-    print(time_now, time_now_day)
+    #print(time_now, time_now_day)
     '''
 
                 Search for the next lesson
@@ -70,7 +70,7 @@ def take_data():
     else:
         result += "Lesson ends in {}:{},\n".format(lessons_now[5].hour, lessons_now[5].minute)
         result += "Until the end of the lesson " + hours_left + ":" + minutes_left + " left."
-        return result
+    return result
 
 
 def echo(bot, update):
