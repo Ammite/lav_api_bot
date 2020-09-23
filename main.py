@@ -4,6 +4,7 @@ import logging
 from time import localtime, time
 from timedate import Period, in_minutes, in_minutes_t, in_h_m, add_utc
 
+'''BOT'''
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger()
